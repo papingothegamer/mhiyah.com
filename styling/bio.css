@@ -1,0 +1,74 @@
+@import url('main.css');
+
+.layout {
+    background: white;
+    height: 100vh;
+    position: relative;
+}
+
+
+.bio-content {
+    padding: 2rem;
+    display: flex; 
+    align-items: center; 
+
+    .image-container {
+        width: 40%; 
+    }
+
+    .text-container {
+        width: 60%; 
+        padding: 0 2rem; 
+    }
+
+    .text-container h1, .text-container h2, .text-container .resume-link {
+        color: #000000; 
+    }
+}
+
+
+
+h1, h2 {
+    color: #000000; 
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+}
+
+.resume-link {
+    padding: 0.2em 0;
+    display: block;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: 100;
+    position: relative;
+}
+
+.resume-link:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: left;
+}
+
+.resume-link:hover:before {
+    transform: scaleX(1);
+}
+.logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: left;
+    color: #000000; 
+    text-decoration: none;
+    margin: 1rem 2rem; 
+    display: inline-block; 
+}

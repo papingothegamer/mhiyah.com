@@ -1,0 +1,59 @@
+@import url('main.css');
+
+.layout {
+    background: white;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    color: #000000;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: rgb(60, 60, 60);
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #353535;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #000000; 
+}
+
+.logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    display: inline-block;
+}
