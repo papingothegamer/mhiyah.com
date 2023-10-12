@@ -6,45 +6,46 @@
     position: relative;
 }
 
-
 .bio-content {
     padding: 2rem;
-    display: flex; 
-    align-items: center; 
-
-    .image-container {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 0.25rem;
-        margin-top: 1rem;
-        overflow: hidden; 
-        border: none; 
-    }
-    
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 0.25rem;
-        display: block;
-        filter: grayscale(100%); 
-    }
-
-    .text-container {
-        width: 60%; 
-        padding: 0 2rem; 
-    }
-
-    .text-container h1, .text-container h2, .text-container .resume-link {
-        color: #000000; 
-    }
+    display: flex;
+    align-items: center;
 }
 
+.image-container {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    border: none;
+}
 
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    display: block;
+    filter: grayscale(100%); /* Apply grayscale filter for black and white */
+}
+
+.text-container {
+    width: 100%; 
+    text-align: left; 
+    padding: 0 2rem;
+}
+
+.text-container h1,
+.text-container h2,
+.text-container .resume-link {
+    color: #000000;
+    text-align: left; 
+}
 
 h1, h2 {
-    color: #000000; 
+    color: #000000;
 }
 
 p {
@@ -61,6 +62,7 @@ p {
     color: #2e2e2e;
     font-weight: 100;
     position: relative;
+    text-align: center; /* Center the link text */
 }
 
 .resume-link:before {
@@ -77,13 +79,25 @@ p {
 .resume-link:hover:before {
     transform: scaleX(1);
 }
+
 .logo {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 500;
     text-align: left;
-    color: #000000; 
+    color: #000000;
     text-decoration: none;
-    margin: 1rem 2rem; 
-    display: inline-block; 
+    margin: 1rem 2rem;
+    display: inline-block;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .bio-content {
+        flex-direction: column;
+    }
+    .image-container {
+        max-width: 100%;
+        width: 100%; /* Ensure full width on mobile */
+    }
 }
