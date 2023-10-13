@@ -5,6 +5,7 @@ body {
     background: rgb(60, 60, 60);
 }
 
+
 .layout {
     background: white;
     height: 100vh;
@@ -39,6 +40,10 @@ h2.content-subtitle {
     position: fixed;
     z-index: 10;
     padding: 25% clamp(2rem, 8vw, 7rem) 0;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    fill: black; /* Set the icon color to black */
+    z-index: 2; /* Ensure the icon is above the text */
 
     &:before {
         position: absolute;
@@ -54,6 +59,33 @@ h2.content-subtitle {
     &:hover:before {
         transform: scale(1);
     }
+}
+
+
+
+.menu-cue {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none; 
+    color: black; 
+    font-weight: bold; 
+    font-size: 14px; 
+    margin-left: -300px; 
+}
+
+.menu:hover + .menu-cue {
+    display: block; 
+}
+
+
+.layout.menu-open .menu-cue {
+    display: none; 
 }
 
 nav {

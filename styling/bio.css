@@ -28,7 +28,7 @@
     object-fit: cover;
     border-radius: 0.25rem;
     display: block;
-    filter: grayscale(100%); /* Apply grayscale filter for black and white */
+    filter: grayscale(100%); 
 }
 
 .text-container {
@@ -62,7 +62,7 @@ p {
     color: #2e2e2e;
     font-weight: 100;
     position: relative;
-    text-align: center; /* Center the link text */
+    text-align: center; 
 }
 
 .resume-link:before {
@@ -91,13 +91,13 @@ p {
     display: inline-block;
 }
 
-/* Media Query for Mobile */
+
 @media (max-width: 768px) {
     .bio-content {
         flex-direction: column;
     }
     .image-container {
         max-width: 100%;
-        width: 100%; /* Ensure full width on mobile */
+        width: 100%; 
     }
 }

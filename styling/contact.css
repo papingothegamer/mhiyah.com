@@ -2,12 +2,16 @@
 
 .layout {
     background: white;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-h1 {
+h2 {
     color: #000000;
+    white-space: nowrap;
 }
 
 p {
@@ -18,9 +22,36 @@ p {
 
 body {
     margin: 0;
-    height: 100vh;
     font-family: 'Inter', sans-serif;
     background: rgb(60, 60, 60);
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 240vh;
+}
+
+.text-container {
+    width: 45%;
+    padding: 2rem 2rem; 
+}
+
+.image-container {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-container img {
+    padding: 1.5rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    display: block;
+    filter: grayscale(100%);
 }
 
 main {
@@ -32,7 +63,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    height: 80px;
 }
 
 footer a {
@@ -44,7 +79,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #000000; 
+    color: #000000;
 }
 
 .logo {

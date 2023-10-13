@@ -5,11 +5,12 @@
     height: 100vh;
     position: relative;
 }
+
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     gap: 20px;
-    margin: 0 auto; 
+    margin: 0 auto;
     max-width: 1200px;
 }
 
@@ -17,8 +18,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center; 
-    margin-top: 20px; 
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .project-card {
@@ -40,7 +41,7 @@
 
 .project-card h3 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500; /* Adjusted font weight to match other pages */
     color: #000000;
     text-align: center;
 }
@@ -50,7 +51,7 @@
     line-height: 1.4;
     color: #333;
     margin-top: 1rem;
-    text-align: center; 
+    text-align: center;
 }
 
 .project-card .project-link {
@@ -89,14 +90,20 @@
 
 #projects h3,
 #projects p {
+    font-size: 1.2rem;
+    font-weight: 100;
     color: #000000;
-    text-align: center; 
+    text-align: center;
+}
+
+/* Font-weight adjustment for .logo and .navbar a */
+.logo, .navbar a {
+    font-weight: 300; /* Adjusted font weight to match other pages */
 }
 
 .logo {
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 500;
     text-align: left;
     color: #000000;
     text-decoration: none;
